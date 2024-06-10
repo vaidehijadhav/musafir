@@ -34,8 +34,8 @@
     user-select: none;
 }
 
-svg:hover{
-    color: #3498db;
+.arrow:hover{
+    fill: #3498db;
 }
 
 .right{
@@ -57,6 +57,10 @@ svg:hover{
     border: 3px solid #fff;
     border-radius: 50%;
     margin: 0 10px;
+}
+
+.active, .dot:hover{
+    border-color: #3498db;
 }
 
 .fade{
@@ -89,11 +93,48 @@ svg:hover{
 .text h1{
     color: #3498db;
     font-weight: 700;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .text p{
     font-weight: 400;
     font-size: 20px;
+}
+
+img{
+    transform: scale(1.5, 1.5);
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+
+@media screen and (max-width: 800px) {
+    .myslider{
+        height: 500px;
+    }
+    .txt{
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-name: posi2;
+        animation-duration: 2s;
+    }
+
+    @keyframes posi2 {
+        from {top: 35%;}
+        to {top: 50%;}
+    }
+    .text h1{
+        font-size: 40px;
+    }
+    .text p {
+        font-size: 13px;
+    }
+}
+
+@media screen  and (max-width: 520px){
+    .text h1{
+        font-size: 30px;
+    }
 }
 
