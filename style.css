@@ -34,7 +34,7 @@ nav{
     font-family: "Kalam", cursive;
     font-size: 35px;
     font-weight: 400;
-    color: #BBE1FA;
+    color: #004953;
     letter-spacing: 1px;
     margin-top: 12px;
 }
@@ -52,7 +52,8 @@ nav{
 
 .menu li a{
     text-decoration: none;
-    color: #40E0D0;
-    font-family: "Varela Round", sans-serif;
+    color: #322503;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
 }
 
