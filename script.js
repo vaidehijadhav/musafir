@@ -4,7 +4,7 @@ const dots = document.querySelectorAll('.dot');
 let counter = 1;
 slideFun(counter);
 
-let timer = setInterval(autoslide, 8000);
+let timer = setInterval(autoslide, 5000);
 
 function autoslide() {
     counter += 1;
@@ -25,7 +25,7 @@ function currentSlide(n) {
 
 function resetTimer() {
     clearInterval(timer);
-    timer = setInterval(autoslide, 8000);
+    timer = setInterval(autoslide, 5000);
 }
 
 function slideFun(n) {
