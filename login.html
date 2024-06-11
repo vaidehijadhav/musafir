@@ -7,14 +7,12 @@
     <link rel="icon" href="./assest/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./login.css" />
-
-
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo">
-            <img  src="./assest/Logo.png" alt="logo" height="60px"  width="60px"/>
+            <img src="./assest/Logo.png" alt="logo" height="60px" width="60px"/>
             <p>Musafir</p>
         </div>
 
@@ -27,7 +25,6 @@
         </div>
     </nav>
 
-    <!-- partial:index.partial.html -->
     <div class="wrapper">
         <div class="title-text">
             <div class="title login">Login Form</div>
@@ -42,7 +39,7 @@
                 <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
-                <form action="#" class="login">
+                <form id="login-form" action="#" class="login">
                     <div class="field">
                         <input type="text" placeholder="Email Address" required>
                     </div>
@@ -57,29 +54,25 @@
                     <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
                 </form>
 
-                <form action="#" class="signup">
+                <form id="signup-form" action="#" class="signup">
                     <div class="field">
                         <input type="text" placeholder="Email Address" required>
                     </div>
-
                     <div class="field">
                         <input type="password" placeholder="Password" required>
                     </div>
-            
                     <div class="field">
                         <input type="password" placeholder="Confirm password" required>
                     </div>
-
                     <div class="field btn">
-                    <div class="btn-layer"></div>
+                        <div class="btn-layer"></div>
                         <input type="submit" value="Signup">
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <!-- partial -->
-    <script  src="./login.js"></script>
-
+    
+    <script src="./login.js"></script>
 </body>
 </html>
